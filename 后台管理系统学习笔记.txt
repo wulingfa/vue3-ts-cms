@@ -1,0 +1,35 @@
+##### element-plus集成
+
+Element Plus,一套为开发者，设计师和产品经理准备的基于Vue3的桌面端组件库
+
+·element-plus是针对Vue2的element-ui为Vue3开发的一个UI组件库
+
+·它的使用方式和很多其他的组件库是一样的，所以学会element-plus，其他类似于ant-desgin-vue,NaiveUI,VantUI都是差不多的；
+
+安装：npm install element-plus
+
+全局引入：
+
+![image-20211012093603459](C:\Users\www\AppData\Roaming\Typora\typora-user-images\image-20211012093603459.png)
+
+
+
+若安装element-plus失败，
+
+可使用npm install  element-plus --legacy-peer-deps方法
+
+·：在开发中，有时候我们需要根据不同的环境设置不同的环境变量，常见的有三种环境：
+
+1）开发环境：development;
+
+2）生产环境：production；
+
+3）测试环境：test;
+
+·：如何区分环境变量，三种方式；
+
+1）手动修改不同的变量
+
+2）根据process.env.NODE_ENV的值进行区分；
+
+3）编写不同的环境变量配置文件；

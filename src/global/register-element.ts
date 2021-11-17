@@ -1,28 +1,27 @@
 import { App } from 'vue'
 import 'element-plus/theme-chalk/base.css'
-import { 
-  ElButton, 
-  ElForm, 
+import {
+  ElButton,
+  ElForm,
   ElFormItem,
-  ElInput, 
+  ElInput,
   ElRadio,
   ElAlert,
-  ElAside 
+  ElAside
 } from 'element-plus'
 
-
-const components = [ 
-  ElButton, 
-  ElForm, 
-  ElFormItem, 
-  ElInput, 
+const components = [
+  ElButton,
+  ElForm,
+  ElFormItem,
+  ElInput,
   ElRadio,
   ElAlert,
-  ElAside 
+  ElAside
 ]
 
-export default function (app: App ): void {
-  for (const  component of components) {
-        app.component(component.name,component)
-    }
+export default function (app: App): void {
+  for (const component of components) {
+    app.component(component.name, component)
+  }
 }

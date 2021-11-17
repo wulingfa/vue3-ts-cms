@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
+    // 目标代码(ts -> js(es5/6/7))
     "target": "esnext",
-    "module": "esnext",
+    // 目标代码需要使用的模块化方案
+    "module": "umd", //支持多种模块化
+    //严格模式检查 代码出错时试下关闭
     "strict": true,
+    // 对jsx进行怎样的处理 preserve：保留
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
@@ -13,7 +17,8 @@
     "baseUrl": ".",
     "types": ["webpack-env"],
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "components/*":["src/components/*"]
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },

@@ -6,4 +6,4 @@ declare module '*.vue' {
 }
 
 declare let $store:any
-
+//在作用域中声明过的变量

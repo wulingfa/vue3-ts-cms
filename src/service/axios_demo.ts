@@ -49,24 +49,27 @@ axios
 //6.axios的拦截器
 //fn1: 请求发送成功会执行的函数
 //fn2:请求发送失败会执行的函数
-axios.interceptors.request.use((config) => {
+axios.interceptors.request.use(
+  (config) => {
     //想做的操作
     //1.给请求添加token
     // 2.isloading动画
-    console.log("请求成功的拦截");
+    console.log('请求成功的拦截')
     return config
-}, 
-(err) => {
-    console.log('请求发送错误');
+  },
+  (err) => {
+    console.log('请求发送错误')
     return err
-    
-}
+  }
 )
-axios.interceptors.response.use((res) => {
-    console.log("响应成功的拦截");
+axios.interceptors.response.use(
+  (res) => {
+    console.log('响应成功的拦截')
     return res
-}, (err) => {
-    console.log('服务器响应失败');
-    
+  },
+  (err) => {
+    console.log('服务器响应失败')
+
     return err
-})
+  }
+)
